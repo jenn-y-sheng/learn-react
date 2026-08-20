@@ -3,8 +3,10 @@
 }
 
 body {
+    background-color: #24282E;
     margin: 0;
     font-family: Inter, sans-serif;
+    color: white;
 }
 
 header {
@@ -28,4 +30,24 @@ nav > span {
     color: #61DAFB;
     font-size: 1.4rem;
     font-weight: 700;
+}
+
+main {
+    height: 100%;
+    padding: 50px 30px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 39px;
+}
+
+ul {
+    margin-top: 40px;
+    max-width: 400px;
+}
+
+li {
+    padding-block: 10px;
+    line-height: 19px;
 }
