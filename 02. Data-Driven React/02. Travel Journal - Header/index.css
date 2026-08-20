@@ -1,3 +1,18 @@
 html, body {
     margin: 0;
+    font-family: Inter;
+}
+
+header {
+    background-color: #F54E51;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 55px;
+}
+
+header > img {
+    width: 24px;
+    margin-right: 7px;
 }
