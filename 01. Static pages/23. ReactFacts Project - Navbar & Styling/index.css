@@ -4,5 +4,28 @@
 
 body {
     margin: 0;
+    font-family: Inter, sans-serif;
 }
 
+header {
+    height: 90px;
+    padding: 30px;
+    background-color: #1D1F26;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    height: 100%;
+}
+
+.nav-logo {
+    width: 40px;
+}
+
+span {
+    font-size: 26px;
+    font-weight: 600;
+    color: #6DD4EA;
+}
