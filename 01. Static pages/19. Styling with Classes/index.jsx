@@ -10,20 +10,26 @@ const root = createRoot(document.getElementById("root"))
 
 function Header() {
     return (
-        <header>
-            <img src="react-logo.png" width="40px" alt="React logo" />
-            
+        <header className="header-bar">
+            <img className="nav-logo" src="react-logo.png" alt="React logo" />
+            <nav>
+                <ul className="nav-list">
+                    <li className="nav-list-item">Pricing</li>
+                    <li className="nav-list-item">About</li>
+                    <li className="nav-list-item">Contact</li>
+                </ul>
+            </nav>
         </header>
     )
 }
 
 function MainContent() {
     return (
-        <main>
+        <main className="main">
             <h1>Reason I am excited to learn React</h1>
             <ol>
-                <li>React is a popular library, so I will be able to fit in with all the coolest devs out there! 😎</li>
-                <li>I am more likely to get a job as a front end developer if I know React</li>
+                <li className="list-item">React is a popular library, so I will be able to fit in with all the coolest devs out there! 😎</li>
+                <li className="list-item">I am more likely to get a job as a front end developer if I know React</li>
             </ol>
         </main>
     )
@@ -31,7 +37,7 @@ function MainContent() {
 
 function Footer() {
     return (
-        <footer>
+        <footer className="footer">
             <small>© 2024 Ziroll development. All rights reserved.</small>
         </footer>
     )
