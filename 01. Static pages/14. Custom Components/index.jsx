@@ -11,6 +11,16 @@ const root = createRoot(document.getElementById("root"))
  * Render the Page component.
  */
 
+function Page() {
+  return (
+    <ol>
+      <li>I need a job</li>
+      <li>I need a job</li>
+      <li>I need a job</li>
+    </ol>
+  );
+}
+
 root.render(
-    
+    <Page />
 )
