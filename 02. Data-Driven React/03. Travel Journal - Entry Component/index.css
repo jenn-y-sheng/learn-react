@@ -1,5 +1,6 @@
 html, body {
     margin: 0;
+    font-family: Inter;
 }
 
 header {
@@ -20,4 +21,49 @@ header > h1 {
     font-size: 0.9rem;
     font-weight: 500;
     font-family: Inter;
+}
+
+.journal-entry {
+    display: flex;
+    align-items: center;
+    margin: 40px;
+}
+
+.main-image {
+    width: 110px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.marker-icon {
+    width: 7px;
+    margin-right: 5px;
+}
+
+span {
+    margin-right: 15px;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+a {
+    font-size: 10px;
+    color: gray;
+}
+
+div > h1 {
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+.date {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.description {
+    font-size: 12px;
 }
