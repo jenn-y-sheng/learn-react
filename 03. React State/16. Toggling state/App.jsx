@@ -1,3 +1,5 @@
+import React from "react"
+
 export default function App() {
     /**
      * Challenge: 
@@ -7,10 +9,20 @@ export default function App() {
      * - Display "Yes" if `isGoingOut` is `true`, "No" otherwise
      */
 
+    const [isGoingOut, setIsGoingOut] = React.useState(true)
+
+    function handleClick() {
+        return setIsGoingOut(!isGoingOut)
+    }
+
     return (
         <main>
             <h1 className="title">Do I feel like going out tonight?</h1>
-            <button className="value">Yes</button>
+            <button 
+                className="value" 
+                onClick={handleClick}
+                aria-label={`Current answer is ${isGoingOut ? "Yes" : "No"}. Click to change it.`}
+            >{isGoingOut ? "Yes" : "No"}</button>
         </main>
     )
 }

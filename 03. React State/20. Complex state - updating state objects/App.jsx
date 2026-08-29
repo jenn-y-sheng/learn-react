@@ -9,7 +9,7 @@ export default function App() {
         lastName: "Doe",
         phone: "+1 (212) 555-1212",
         email: "itsmyrealname@example.com",
-        isFavorite: true
+        isFavorite: false
     })
     
     let starIcon = contact.isFavorite ? starFilled : starEmpty
@@ -17,6 +17,7 @@ export default function App() {
     function toggleFavorite() {
         setContact(prevContact => {
             return {
+                ...prevContact,
                 isFavorite: !prevContact.isFavorite
             }
         })
